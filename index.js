@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 let waitingPlayer = null;
 
 io.on('connection', (socket) => {
-  console.log('New player connected:', socket.id);
+  console.log('New player onnected:', socket.id);
 
   if (waitingPlayer) {
     // Match found
